@@ -1,0 +1,80 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:         Norfolk_terrier_01.jpg  label:            norfolk terrier
+ 2 key:         Norfolk_terrier_02.jpg  label:            norfolk terrier
+ 3 key:               Red_Panda_01.jpg  label:                  red panda
+ 4 key:              Sports_Car_01.jpg  label:                 sports car
+
+     MATCH:
+
+              Red_Panda_01.jpg: 
+Real:                  red panda   Classifier: lesser panda, red panda, panda, bear cat, cat bear, ailurus fulgens
+
+ NOT A MATCH:
+
+        Norfolk_terrier_01.jpg: 
+Real:            norfolk terrier   Classifier:                norwich terrier
+
+        Norfolk_terrier_02.jpg: 
+Real:            norfolk terrier   Classifier:                norwich terrier
+
+             Sports_Car_01.jpg: 
+Real:                 sports car   Classifier: beach wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+              Red_Panda_01.jpg: 
+Real:                  red panda   Classifier: lesser panda, red panda, panda, bear cat, cat bear, ailurus fulgens  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+        Norfolk_terrier_01.jpg: 
+Real:            norfolk terrier   Classifier:                norwich terrier  
+PetLabelDog: 1  ClassLabelDog: 1
+
+        Norfolk_terrier_02.jpg: 
+Real:            norfolk terrier   Classifier:                norwich terrier  
+PetLabelDog: 1  ClassLabelDog: 1
+
+             Sports_Car_01.jpg: 
+Real:                 sports car   Classifier: beach wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+
+*** Results summary of CNN Architecture ALEXNET ***
+N_images            :   4
+N_dogs_img          :   2
+N_notdogs_img       :   2
+N_correct_dogs      :   2
+N_correct_notdogs   :   2
+N_correct_breed     :   0
+N_match             :   1
+
+Match               : 25.000%
+Correct_dogs        : 100.000%
+Correct_notdogs     : 100.000%
+Correct_breed       : 0.000%
+
+INCORRECT Dog Breed Assignment:
+Real:            norfolk terrier   Classifier:                norwich terrier
+Real:            norfolk terrier   Classifier:                norwich terrier
+
+** Total Elapsed Runtime: 0:0:0
