@@ -1,4 +1,3 @@
-#!/bin/sh
 # Usage: sh run_models_batch.sh    -- will run program from commandline within Project Workspace
 #  
 python check_images.py --dir pet_images/ --arch resnet  --dogfile dognames.txt > resnet_pet-images.txt
